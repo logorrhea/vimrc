@@ -6,3 +6,6 @@ set background=dark
 set guifont=Consolas:h16
 map <C-n> :NERDTreeToggle<CR>
 map <C-F> :NERDTreeFind
+set tabstop=4
+set smartindent
+set expandtab
