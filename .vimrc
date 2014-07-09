@@ -1,4 +1,4 @@
-execute pathogen#infect()
+execute pathogen#infect('lib/{}')
 filetype off
 set runtimepath+=$GOROOT/misc/vim
 syntax on
