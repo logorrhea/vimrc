@@ -3,6 +3,7 @@ filetype off
 " set runtimepath+=$GOROOT/misc/vim
 syntax on
 filetype plugin indent on
+au BufNewFile,BufRead *.hbs set filetype=html
 colorscheme gruvbox
 set background=dark
 set guifont=Consolas:h16
@@ -12,7 +13,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set number
-set wildignore+=*/target/*,*.war
+set wildignore+=*/target/*,*.war,*/node_modules/*,*/bower_components/*
 let g:ctrlp_root_markers = ['.classpath', 'application.properties', 'Gemfile', 'package.json']
 let mapleader=","
 set cc=80
