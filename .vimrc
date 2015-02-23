@@ -17,3 +17,7 @@ set wildignore+=*/target/*,*.war,*/node_modules/*,*/bower_components/*
 let g:ctrlp_root_markers = ['.classpath', 'application.properties', 'Gemfile', 'package.json']
 let mapleader=","
 set cc=80
+
+" PHP Specific things
+autocmd FileType php let b:surround_45 = "<?php \r ?>"
+autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
