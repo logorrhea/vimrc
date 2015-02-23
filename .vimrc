@@ -21,3 +21,4 @@ set cc=80
 " PHP Specific things
 autocmd FileType php let b:surround_45 = "<?php \r ?>"
 autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
+autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
