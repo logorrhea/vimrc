@@ -43,3 +43,12 @@
 [submodule "bundle/dash.vim"]
 	path = bundle/dash.vim
 	url = git://github.com/rizzatti/dash.vim.git
+[submodule "bundle/vim-repeat"]
+	path = bundle/vim-repeat
+	url = git://github.com/tpope/vim-repeat.git
+[submodule "bundle/vim-unimpaired"]
+	path = bundle/vim-unimpaired
+	url = git://github.com/tpope/vim-unimpaired.git
+[submodule "bundle/vim-visualstar"]
+	path = bundle/vim-visualstar
+	url = git://github.com/thinca/vim-visualstar.git
