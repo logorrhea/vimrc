@@ -37,3 +37,9 @@
 [submodule "bundle/vim-surround"]
 	path = bundle/vim-surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/php.vim"]
+	path = bundle/php.vim
+	url = git://github.com/StanAngeloff/php.vim.git
+[submodule "bundle/dash.vim"]
+	path = bundle/dash.vim
+	url = git://github.com/rizzatti/dash.vim.git
