@@ -4,6 +4,8 @@ filetype off
 syntax on
 filetype plugin indent on
 au BufNewFile,BufRead *.hbs set filetype=html
+au BufNewFile,BufRead Vagrantfile set filetype=ruby
+au BufNewFile,BufRead Guardfile set filetype=ruby
 colorscheme gruvbox
 set background=dark
 set guifont=Consolas:h16
@@ -22,3 +24,8 @@ set cc=80
 autocmd FileType php let b:surround_45 = "<?php \r ?>"
 autocmd FileType php noremap <C-M> :w!<CR>:!/usr/bin/php %<CR>
 autocmd FileType php noremap <C-L> :!/usr/bin/php -l %<CR>
+
+" Dash settings
+let g:dash_map = {
+    \ 'php' : 'drupal'
+    \ }
