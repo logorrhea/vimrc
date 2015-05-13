@@ -9,10 +9,19 @@ augroup vimrc_filetype
     autocmd BufNewFile,BufRead *.hbs set filetype=html
     autocmd BufNewFile,BufRead Vagrantfile set filetype=ruby
     autocmd BufNewFile,BufRead Guardfile set filetype=ruby
+    autocmd BufNewFile,BufRead *.module set filetype=php
+    autocmd BufNewFile,BufRead *.install set filetype=php
+    autocmd BufNewFile,BufRead *.inc set filetype=php
 augroup END
 
-colorscheme gruvbox
-set background=dark
+"if has("gui_running")
+    "set background=light
+    "colorscheme solarized
+"else
+    colorscheme gruvbox
+    set background=dark
+"endif
+
 set guifont=Consolas:h16
 map <C-n> :NERDTreeToggle<CR>
 map <C-F> :NERDTreeFind
@@ -31,3 +40,17 @@ set colorcolumn=80
 let g:dash_map = {
     \ 'php' : 'drupal'
     \ }
+
+xnoremap <silent> - :<c-u>call <SID>Dasherize()<cr>
+function! s:Dasherize()
+  let reg = @@
+  normal! gvy
+  let @@ = tolower(substitute(@@, '\W\+', '-', 'g'))
+  normal! gvp
+  let @@ = reg
+endfunction
+
+set foldmethod=indent   "Fold based on indent
+set foldnestmax=10      "deepest fold is 10 levels
+set nofoldenable        "dont fold by default
+set foldlevel=1

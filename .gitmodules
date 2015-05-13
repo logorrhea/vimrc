@@ -55,3 +55,15 @@
 [submodule "bundle/ag.vim"]
 	path = bundle/ag.vim
 	url = git://github.com/rking/ag.vim.git
+[submodule "bundle/vim-scala"]
+	path = bundle/vim-scala
+	url = git@github.com:derekwyatt/vim-scala.git
+[submodule "bundle/vim-css-color"]
+	path = bundle/vim-css-color
+	url = git://github.com/ap/vim-css-color.git
+[submodule "bundle/indentLine"]
+	path = bundle/indentLine
+	url = git://github.com/Yggdroot/indentLine.git
+[submodule "bundle/vim-colors-solarized"]
+	path = bundle/vim-colors-solarized
+	url = git://github.com/altercation/vim-colors-solarized.git
