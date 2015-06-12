@@ -14,13 +14,17 @@ augroup vimrc_filetype
     autocmd BufNewFile,BufRead *.inc set filetype=php
 augroup END
 
-"if has("gui_running")
-    "set background=light
-    "colorscheme solarized
-"else
-    colorscheme gruvbox
+if has("gui_running")
+    "set background=dark
+    "let g:seoul256_background = 235
+    "colorscheme seoul256
+    "colorscheme nefertiti
     set background=dark
-"endif
+    colorscheme gruvbox
+else
+    set background=dark
+    colorscheme gruvbox
+endif
 
 set guifont=Consolas:h16
 map <C-n> :NERDTreeToggle<CR>
@@ -30,7 +34,7 @@ set shiftwidth=4
 set expandtab
 set number
 set wildignore+=*/target/*,*.war,*/node_modules/*,*/bower_components/*
-let g:ctrlp_root_markers = ['.classpath', 'application.properties', 'Gemfile', 'package.json']
+let g:ctrlp_root_markers = ['.classpath', 'application.properties', 'Gemfile', 'package.json', 'Guardfile']
 let mapleader=","
 set colorcolumn=80
 

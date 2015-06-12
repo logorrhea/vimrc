@@ -61,9 +61,18 @@
 [submodule "bundle/vim-css-color"]
 	path = bundle/vim-css-color
 	url = git://github.com/ap/vim-css-color.git
-[submodule "bundle/indentLine"]
-	path = bundle/indentLine
-	url = git://github.com/Yggdroot/indentLine.git
 [submodule "bundle/vim-colors-solarized"]
 	path = bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/cake16"]
+	path = bundle/cake16
+	url = git://github.com/zefei/cake16
+[submodule "bundle/seoul256.vim"]
+	path = bundle/seoul256.vim
+	url = git://github.com/junegunn/seoul256.vim.git
+[submodule "bundle/vim-nefertiti"]
+	path = bundle/vim-nefertiti
+	url = git://github.com/jeetsukumaran/vim-nefertiti.git
+[submodule "bundle/vim-indent-guides"]
+	path = bundle/vim-indent-guides
+	url = git://github.com/nathanaelkane/vim-indent-guides.git
