@@ -22,6 +22,9 @@ augroup END
     set background=dark
 "endif
 
+" Mono/Unity Stuff
+let g:Omnisharp_selector_ui = 'ctrlp'
+
 set guifont=Consolas:h16
 map <C-n> :NERDTreeToggle<CR>
 map <C-F> :NERDTreeFind
